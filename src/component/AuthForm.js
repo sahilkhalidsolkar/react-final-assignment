@@ -38,7 +38,7 @@ const AuthForm = () => {
 
         }
         if (email === authenticatedUser.email && password === authenticatedUser.password) {
-            const token = email + password
+            const token = Math.trunc(Math.random() * 10000000) + email + Math.trunc(Math.random() * 10000000) + password + Math.trunc(Math.random() * 10000000)
             localStorage.setItem('token', token)
             return navigate('/dashboard')
         }
