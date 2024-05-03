@@ -5,7 +5,7 @@ import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import LogoutPage from './pages/LogoutPage';
 import IndexPage from './pages/IndexPage'
-import { loader as logoutAction } from './pages/LogoutPage';
+import { loader as logoutLoader } from './pages/LogoutPage';
 import ProtectedRoute from './component/ProtectedRoute';
 import PageNotFound from './pages/PageNotFound';
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/logout',
-        loader: logoutAction,
+        loader: logoutLoader,
         element: <LogoutPage />
       },
       {
