@@ -1,0 +1,10 @@
+.logout_Page{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.logout_Page p{
+font-size: 1.3rem;
+}

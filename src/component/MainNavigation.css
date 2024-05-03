@@ -1,0 +1,13 @@
+.nav_links{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color .3s ease-in-out;
+    
+}
+.nav_links:hover{
+    color:  grey;
+}
+.active_link{
+color: grey;
+text-decoration: none;
+}
